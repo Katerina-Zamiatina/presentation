@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>TypeScript</h1>
+          <div>Advantages And Disadventages</div>
+        </section>
+        <section>
+          <section><h3>Advantages</h3></section>
+          <section>
+            <ul>
+              <li>
+                <h5>Strict typing</h5>
+                <p>
+                  Everything stays the way we define it. Need a variable to
+                  always be a number? It’ll always be a number, then.
+                </p>
+              </li>
+              <li>
+                <h5>Structural typing</h5>
+                <p>
+                  An approach where we look not at what the type is called or
+                  where it is defined, but at what it describes internally.
+                </p>
+              </li>
+              <li>
+                <h5>Early spotted bugs</h5>
+                <p>
+                  TypeScript features mistakes at arrangement time while
+                  JavaScript, at the runtime.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <h5>Rich IDE support</h5>
+                <p>
+                  Extraordinary tooling with IntelliSense which gives dynamic
+                  clues as the code’s additional.
+                </p>
+              </li>
+              <li>
+                <h5>Readability</h5>
+                <p>TypeScript makes the code more self-expressive</p>
+              </li>
+              <li><h5>Power of OOP</h5></li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Disadventages</h3>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <h5>False sense of security</h5>
+                <p>
+                  TS is transpiled into untyped JavaScript, so there is always
+                  the risk of weird type conversions at runtime.
+                </p>
+              </li>
+              <li>
+                <h5>Bloated code</h5>
+                <p>
+                  Has the potential of slowing down the development process.
+                </p>
+              </li>
+              <li>
+                <h5>No specification</h5>
+                <p>
+                  The last specification was on the version 1.8 / january 2016
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>Usefull Links</h1>
+          <ul>
+            <li>
+              <a href="https://www.typescriptlang.org/docs/handbook/intro.html"
+                >TypeScript Handbook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.typescriptlang.org/cheatsheets"
+                >TypeScript cheatSheets</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://insights.stackoverflow.com/survey/2021#section-top-paying-technologies-top-paying-technologies"
+                >StackOverflow insights</a
+              >
+            </li>
+            <li><a href="https://npmtrends.com/typescript">Npm Trends</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
